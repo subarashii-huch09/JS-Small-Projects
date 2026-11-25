@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Microsoft JhengHei", "Noto Sans", sans-serif;
+  overflow-x: hidden;
+  text-decoration: none;
+  background-color: whitesmoke;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.position-relative {
+  position: relative;
+}
+
+
+.header {
+  background-image: url(../assets/Hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .district-select:hover {
+  background-color: rgba(235, 240, 243, 0.638);
+}
+
+.header .header_nav {
+  position: absolute;
+  top: 17.5rem;
+  left: 17%;
+  margin-bottom: 5rem;
+  box-shadow:0 0 3px #515151;  
+}
+
+.main .arrow-down {
+  position: absolute;
+  left: 47.5%;
+  top: 122%;
+  height: 2rem;
+  width: 2.15rem;
+  border-radius: 50%;
+  border: 1px solid #559ac8;
+  background-color:whitesmoke;
+  z-index: 1;
+  margin-top: 1rem;
+}
+
+.main .border_top {
+  min-width: 80%;
+  height: 0.1px;
+  color:#559ac8;
+  border-bottom: 2.5px dashed #559ac8;
+  position: absolute;
+  top: 125%;
+  left: 10%;
+  margin-top: 1rem;
+}
+
+.main .district_title {
+  position:relative;
+  font-size: 2.2rem;
+  padding-bottom: 3rem;
+  color:rgba(138,130,204,1);
+  top:12.5rem;
+  left: 0.2rem;
+}
+
+.touristSpot_list {
+  padding: 5rem 3rem;
+  margin-top: 9.5rem;
+}
+.main .spot_item {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.main .spot_item .item_header {
+  position: relative;
+}
+
+.main .spot_item .spot_item-name {
+  font-size: 1.125rem;
+}
+
+.main .spot_item .item-header-info {
+  position:relative;
+  bottom: 45px;
+  left: 15px;
+}
+.main .spot_item .img_container {
+  position: relative;
+}
+
+.main .spot_item .img_container:hover {
+  opacity: 0.3;
+}
+.main .spot_item .img_container img {
+width: 100%;
+height: 15rem;
+object-fit: cover;
+}
+
+.main .spot_item .item-body {
+  padding: 0 20px 20px ;
+}
+
+.main .spot_item .item-body li {
+  padding: 5px 0;
+  line-height: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.main .spot_item .item-body i {
+  margin-right: 0.5rem;
+}
+
+.toTop {
+  width: 3.25rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  text-align: center;
+}
+
+.toTop:hover {
+  transform: scale(1.2, 1.2);
+}
+@media only screen and (max-width: 28em) {
+  .header_nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 0.5rem;
+    margin: 0;
+    width: 200%;
+  }
+
+  .arrow-down {
+    display: none;
+  }
+
+  .border_top {
+    display: none;
+  }
+
+  .main .district_title {
+  color:rgba(138,130,204,1);
+  top:15.5rem;
+  left: 0.2rem;
+  padding: 2.5rem;
+}
+}
+
+@media only screen and (min-width: 28.5em){
+  .main .arrow-down {
+    top: 63.5%;
+  }
+
+  .main .border_top {
+    top: 65%;
+  }
+
+  .popularDistrict_list .btn {
+    padding-left: 1.35rem;
+    padding-right: 1.35rem;
+  }
+}
+
+@media only screen and (min-width: 40rem){
+  .header .header_nav {
+  top: 19.5rem;
+}
+.popularDistrict_list .btn {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 70rem) {
+  .btn {
+    width: 80%;
+    font-size: 1.25rem;
+  }
+
+  .main .arrow-down {
+    top: 48.5%;
+    left: 49%;
+  }
+
+  .main .border_top {
+    top: 50%;
+  }
+
+  .main .arrow-down {
+    top: 63%;
+  }
+
+  .main .border_top {
+    top: 65%;
+  }
+}
+@media only screen and (min-width: 125rem){
+   .main .arrow-down {
+    top: 50%;
+  }
+
+  .main .border_top {
+    top: 51.5%;
+  }
+}
+
